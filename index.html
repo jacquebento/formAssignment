@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cripta Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo2.png" alt="logo">
+        <h2>Sign Up Form</h2>
+    </header>
+   
+    <form action="#" id="form">
+        <fieldset id="personal">
+            <legend>Personal Information</legend>
+
+            <div>
+                <label for="firstname" class="label">First Name</label>
+                <input type="text" id="firstname" value="" placeholder="Your First Name" required maxlength="30" pattern="\w{3,30}">
+            </div>
+
+            <div>
+                <label for="lastname" class="label">Last Name</label>
+                <input type="text" id="lastname" value="" placeholder="Your last name" required maxlength="30">
+            </div>
+
+            <div>
+                <label for="password" class="label">Password</label>
+                <input type="password" id="password" value="" placeholder="Your Password" required maxlength="30">
+            </div>
+
+            <div>
+                <label for="birth" class="label">Date of Birth</label>
+                <input type="date" id="birth" value="" required>
+            </div>
+
+            
+
+            <div>
+                <label for="address" class="label">Adress</label>
+                <input type="text" id="address" value="" placeholder="Your Address" required maxlength="255">
+            </div>
+
+            <div>
+                <label for="province" class="label">Province / Territory</label>
+                <select id="province" required>
+                    <option value=""> -- please choose one --</option>
+                    <option value="AB">Alberta</option>
+                    <option value="BC">British Columbia</option>
+                    <option value="MT">Manitoba</option>
+                    <option value="NB">New Brunswick</option>
+                    <option value="NL">Newfoundland and Labrador</option>
+                    <option value="NS">Nova Scotia</option>
+                    <option value="NT">Northwest Territories</option>
+                    <option value="NU">Nunavut</option>
+                    <option value="ON">Ontario</option>
+                    <option value="PE">Prince Edward Island</option>
+                    <option value="QC">Quebec</option>
+                    <option value="SK">Saskatchewan</option>
+                    <option value="YT">Yukon</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="phone" class="label">Phone Number</label>
+                <input type="tel" id="phone" value="" placeholder="Your Phone Number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" minlength="10" maxlength="10" required>
+                
+            </div>
+
+            <div> 
+                <label for="income" class="label">Income Level (anual income)</label>
+                <input type="text" id="income" placeholder="Your annual income" pattern= "[0-9]+" maxlength="12" required>
+
+            </div>       
+
+        </fieldset>
+      
+
+        <fieldset id="investment">
+            <legend>Investment Information</legend>
+
+            
+            <div>
+                <label for="experience">Years of investment experience</label>
+                <input type="number" id="experience" required min="0" max="100">
+            </div>  
+
+            <div>
+                <label for="risk" class="label">Risk Tolerance</label>
+                <select id="risk" required>
+                    <option value=""> -- please choose one --</option>
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                </select>
+
+            </div>
+            
+
+            
+            <div>
+                <label for="goals" class="label">Investment Goals:</label>
+            <select id="goals" required>
+                <option value=""> -- please choose one --</option>
+                <option value="retirement">Saving for retirement</option>
+                <option value="wealth">Building wealth</option>
+                <option value="milestones">Achieving specific financial milestones</option>
+            </select>
+            </div>
+        </fieldset>
+        
+
+        <fieldset id="bank">
+            <legend>Bank Account Information</legend>
+
+            <div id="bank_info">
+
+                <div>
+                    <label for="branchCode" class="label">Branch Code</label>
+                    <input type="text" id="branchCode" required>
+                </div>
+
+                <div>
+                    <label for="bankNumber" class="label">Bank Number</label>
+                    <input type="text" id="bankNumber" pattern= "[0-9]+" maxlength="6" required>
+                </div>
+
+                <div>
+                    <label for="account" class="label">Account Number</label>
+                    <input type="text" id="account" pattern= "[0-9]+" maxlength="10" required>
+                </div>
+            </div>
+
+            <div>
+                <input type="checkbox" id="legal" required>
+                <label for="legal">By using this website you are agreeing to our Privacy Policy</label>
+              </div>
+
+            <input type="submit" value="SIGN UP" id="submit" class="next">
+
+        </fieldset>
+
+    </form>
+    
+    <script src="script.js"></script>
+   
+</body>
+</html>
+
+
+
+
+

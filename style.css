@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --orange:#f95919;
+    --inputGray: #eeecec;
+    --green:#33845B;
+    --black:#0a1912;
+    --white:#ffffff;
+}
+
+*{
+    font-family: "Montserat", "Abel", sans-serif;
+}
+
+body{
+    margin: 0 auto;
+    width: 40%;
+    font-size: large;
+}
+
+header{
+    height: 80px;
+    display: grid;
+   grid-template-columns: 1fr 1fr;
+   
+
+}
+
+img{
+    width: 150px;
+    height: 50px;
+    margin: 20px auto;
+}
+
+h2{
+    margin: auto 0;
+}
+
+
+
+#personal{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    row-gap: 20px;
+}
+
+.next{
+    width: 80px;
+    background-color: var(--orange);
+    color: var(--white);
+    font-weight: 700;
+    margin: 20px 45%;
+}
+
+fieldset{
+    border: 0;
+}
+
+legend{
+    background-color: #33845B;
+    width: 100%;
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 0.3rem;
+    font-size: larger;
+}
+
+h2{
+    text-align: center;
+}
+
+.label{
+    display: block;
+}
+
+input{
+    width: 200px;
+    border: none;
+    background-color: var(--inputGray);
+    padding: .5rem;
+    border-radius: 0.3rem;
+}
+
+input[type="range"]{
+    accent-color: var(--green);
+    width: 200px;
+    margin: 0;
+}
+
+#bank_info{
+    display: flex;
+    justify-content: space-between;
+}
+
+datalist {
+    display: inline-flex;
+    width: 200px;
+    font-size: smaller;
+    justify-content: space-between;
+  }
+
+#address{
+    width: 300px;
+}
+
+output{
+    font-size: small;
+}
+
+#experience{
+    margin-left: 20px;
+    width: 40px;
+}
+
+#investment{
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+}
+
+.goals, #legal{
+    margin-left: -80px;
+    margin-right: -80px;
+} 
+
+#bank_info input{
+    width: 170px;
+}
+
+#legal{
+    margin-top: 20px;
+}
+
+#bank{
+    display: grid;
+}
+
+
+
+
+
+
